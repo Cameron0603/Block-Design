@@ -2,19 +2,17 @@ function print(count) {
     let message = "";
     let is_red = false;
     for(let i = 0; i < count; i++) {
-        if(is_red == true) {
-            is_red = false;
-            message += '<img src="images/red.svg" id="image' + (i + 1) + '" onclick="change(' + (i + 1) + ')" class="image" alt="">\n';
-        } else {
-            is_red = true;
-            message += '<img src="images/white.svg" id="image' + (i + 1) + '" onclick="change(' + (i + 1) + ')" class="image" alt="">\n';
-        }
+        message += '<img src="images/red_white.svg" id="image' + (i + 1) + '" onclick="change(' + (i + 1) + ')" class="image" alt="">\n';
         if(count == 4) {
             if(i == 1) {
                 message += '<br>\n';
             }
         } else if(count == 9) {
             if(i == 2 || i == 5 || i == 8) {
+                message += '<br>\n';
+            }
+        } else if(count == 6) {
+            if(i == 2 || i == 5) {
                 message += '<br>\n';
             }
         }
