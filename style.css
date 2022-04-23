@@ -16,14 +16,20 @@
 }
 
 .margin {
-    margin-bottom: 8em;
+    margin-bottom: 6.5em;
 }
 
 .image {
     border: 1px solid black;
-    width: 10em;
+    width: 10%;
 }
 
 #board {
     margin-bottom: 5em;
+}
+
+@media screen and (max-width: 700px) {
+    .image {
+        width: 20%;
+    }
 }
