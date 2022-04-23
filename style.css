@@ -1,0 +1,22 @@
+#board {
+    text-align: center;
+}
+
+.choose {
+    padding: 0.5em 1em;
+    font-size: 110%;
+    background-color:rgb(255, 106, 0);
+    color: white;
+    font-weight: bold;
+    margin: 1%;
+    margin-bottom: 4%;
+}
+
+.center {
+    text-align: center;
+}
+
+.image {
+    border: 1px solid black;
+    width: 20%;
+}
